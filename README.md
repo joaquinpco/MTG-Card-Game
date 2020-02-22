@@ -22,7 +22,7 @@ They choose these decks from a pool of some 20,000 cards created as the game evo
 
 ## Authors
 
-* **José Joaquín Pérez - CALDERÓN Ortiz** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **José Joaquín Pérez Calderón Ortiz** - *Initial work* - [joaquinpco](https://github.com/joaquinpco)
 
 ## Acknowledgments
 
