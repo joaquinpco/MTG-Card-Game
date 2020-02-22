@@ -9,6 +9,8 @@ They choose these decks from a pool of some 20,000 cards created as the game evo
 
 * Clone de project and open it in your Unity IDE.
 
+![alt text](https://user-images.githubusercontent.com/5908629/75096271-4cce3e80-559e-11ea-80f9-a2eb1056d03a.png)
+
 ### Prerequisites
 
 - Unity 3D
