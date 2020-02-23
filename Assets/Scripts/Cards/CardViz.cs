@@ -23,7 +23,13 @@ namespace AkeenDev
 
                 title.text = card.title;
                 detail.text = card.detail;
-                flavor.text = card.flavor;
+                if (string.IsNullOrEmpty(c.flavor))
+                    flavor.gameObject.SetActive(false);
+                else
+                {
+                    flavor.text = card.flavor;
+                    flavor.gameObject.SetActive(true);
+                }
                 Artist.text = card.artist;
             }
         }
