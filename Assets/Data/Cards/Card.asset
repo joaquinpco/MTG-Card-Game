@@ -12,10 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cadc0f2241f5a48a5f61ff59f808c0, type: 3}
   m_Name: Card
   m_EditorClassIdentifier: 
-  title: Tarmogoyf
-  art: {fileID: 21300000, guid: e6b7001cc79071f41b89ed349cb77ad6, type: 3}
-  detail: "La fuerza del Tarmogoyf es igual a la cantidad de tipos de carta entre
-    las cartas en todos los cementerios y su resistencia es igual a ese n\xFAmero
-    m\xE1s 1. "
-  flavor: What doesn't grow, dies. And what dies grows the tarmogoyf.
-  artist: Ryan Barger
+  properties:
+  - stringValue: Tarmogoyf
+    intValue: 0
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: f3372a8e62f136e45b75a294767aac49, type: 2}
+  - stringValue: Lorem Ipsum Dolor sit Amet
+    intValue: 0
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: 7d5c37ba682a6284a9c37fe89fcf3a14, type: 2}
+  - stringValue: This is the flavor
+    intValue: 0
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: 742870d5c5fce594f9b1b521eb9f1391, type: 2}
+  - stringValue: 
+    intValue: 0
+    sprite: {fileID: 21300000, guid: e6b7001cc79071f41b89ed349cb77ad6, type: 3}
+    element: {fileID: 11400000, guid: ba44d1b1992e75d4e90dfd32c891d7b6, type: 2}
+  - stringValue: 
+    intValue: 1
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: 67cf70911caa0fd429a52c714725723b, type: 2}
+  - stringValue: Bryan Kernigan
+    intValue: 0
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: 7b431b93ee46f514ca11498d1d8c1c90, type: 2}
