@@ -9,12 +9,14 @@ namespace AkeenDev
         //Instance of One Card Model
         public Card card;
         public CardVizProperties[] properties;
+        public GameObject statsHolder;
 
         public void LoadCard(Card  c)
         {
             if (c != null)
             {
                 card = c;
+                card.cardType.OnSetType(this);
                 
                 for(int i = 0; i < c.properties.Length; i++)
                 {
