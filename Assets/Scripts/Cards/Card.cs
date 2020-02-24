@@ -2,13 +2,14 @@
 
 namespace AkeenDev
 {
-    [CreateAssetMenu(menuName = "Cards")]
+    [CreateAssetMenu(menuName = "Card")]
     public class Card : ScriptableObject
     {
-        public string title;
+        public CardProperties[] properties;
+        /*public string title;
         public Sprite art;
         public string detail;
         public string flavor;
-        public string artist;
+        public string artist;*/
     }
 }

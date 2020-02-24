@@ -6,44 +6,61 @@ namespace AkeenDev
 {
     public class CardViz : MonoBehaviour
     {
-        public Text title;
-        public Text detail;
-        public Text flavor;
-        public Text Artist;
-        public Image art;
-
         //Instance of One Card Model
         public Card card;
+        public CardVizProperties[] properties;
 
         public void LoadCard(Card  c)
         {
             if (c != null)
             {
                 card = c;
-
-                title.text = card.title;
-                detail.text = card.detail;
-                if (string.IsNullOrEmpty(c.flavor))
-                    flavor.gameObject.SetActive(false);
-                else
+                
+                for(int i = 0; i < c.properties.Length; i++)
                 {
-                    flavor.text = card.flavor;
-                    flavor.gameObject.SetActive(true);
+                    CardProperties cp = c.properties[i];
+
+                    CardVizProperties p = GetProperty(cp.element);
+
+                    if(cp.element is ElementInt)
+                    {
+                        if (cp != null) { }
+                            //p.text.text = cp.intValue.ToString();
+                    }
+                    else if(cp.element is ElementText)
+                    {
+                        p.text.text = cp.stringValue;
+                    }
+                    else 
+                        if(cp.element is ElementImage)
+                        {
+                            p.img.sprite = cp.sprite;
+                        }
                 }
-                Artist.text = card.artist;
             }
+        }
+
+        public CardVizProperties GetProperty(Element e)
+        {
+            CardVizProperties cardVizProperties = null;
+            bool finded = false;
+
+            for(int i = 0; i < properties.Length && !finded; i++)
+            {
+                if(properties[i].element == e)
+                {
+                    cardVizProperties = properties[i];
+                    finded = true;
+                }
+            }
+
+            return cardVizProperties;
         }
 
         // Use this for initialization
         void Start()
         {
             LoadCard(card);
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 }
