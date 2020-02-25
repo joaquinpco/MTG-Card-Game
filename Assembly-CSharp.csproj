@@ -74,6 +74,14 @@
     <Compile Include="Assets\Scripts\Cards\ElementInt.cs" />
     <Compile Include="Assets\Scripts\Cards\ElementText.cs" />
     <Compile Include="Assets\Scripts\Cards\SpellCard.cs" />
+    <Compile Include="Assets\Scripts\Game Elements\CardInstance.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IClickable.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Settings.cs" />
+    <Compile Include="Assets\Scripts\States\Action.cs" />
+    <Compile Include="Assets\Scripts\States\MouseOverDetection.cs" />
+    <Compile Include="Assets\Scripts\States\State.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/MTG Game/Magic the gathering/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

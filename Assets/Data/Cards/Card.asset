@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cadc0f2241f5a48a5f61ff59f808c0, type: 3}
   m_Name: Card
   m_EditorClassIdentifier: 
+  cardType: {fileID: 11400000, guid: f452087f1c5cec6469d5c6c314f8d20c, type: 2}
   properties:
   - stringValue: Tarmogoyf
     intValue: 0

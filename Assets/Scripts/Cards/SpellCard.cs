@@ -8,6 +8,7 @@ namespace AkeenDev
     {
         public override void OnSetType(CardViz viz)
         {
+            base.OnSetType(viz);
             viz.statsHolder.SetActive(false);
         }
     }
