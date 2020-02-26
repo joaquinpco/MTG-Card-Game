@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65b30a20d0fa53a498587578f5147b9c, type: 3}
-  m_Name: ResourceManager
+  m_Name: ResourcesManager
   m_EditorClassIdentifier: 
-  typeElement: {fileID: 0}
+  typeElement: {fileID: 11400000, guid: 261b9ba1a408baf4aa68506882b660fc, type: 2}

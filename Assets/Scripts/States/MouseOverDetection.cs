@@ -10,20 +10,16 @@ namespace AkeenDev.GameState
     {
         public override void Execute(float d)
         {
-            PointerEventData pointerEventData = new PointerEventData(EventSystem.current)
-            {
-                position = Input.mousePosition
-            };
+            List<RaycastResult> results = Settings.GetUIObjs();
 
-            List<RaycastResult> results = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(pointerEventData, results);
-
-            foreach(RaycastResult result in results)
+            foreach (RaycastResult result in results)
             {
                 IClickable c = result.gameObject.GetComponentInParent<IClickable>();
-                if(c != null)
+
+                if (c != null)
                 {
                     c.OnHighlight();
+                    break;
                 }
             }
         }

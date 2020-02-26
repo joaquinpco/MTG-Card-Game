@@ -5,14 +5,25 @@ namespace AkeenDev
 {
     public class CardInstance : MonoBehaviour, IClickable
     {
+        public CardViz viz;
+        public AkeenDev.GameElements.GE_Logic currentLogic;
+
+        void Start()
+        {
+            viz = GetComponent<CardViz>();
+        }
+
         public void OnClick()
         {
+            Debug.Log("Clicked ");
+            if(currentLogic != null)
+                currentLogic.OnClick(this);
         }
 
         public void OnHighlight()
         {
-            Vector3 s = Vector3.one * 2;
-            this.transform.localScale = s;
+            if (currentLogic != null)
+                currentLogic.OnHighlight(this);
         }
     }
 }

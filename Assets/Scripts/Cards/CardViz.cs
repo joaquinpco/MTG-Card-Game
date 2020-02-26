@@ -45,14 +45,13 @@ namespace AkeenDev
         public CardVizProperties GetProperty(Element e)
         {
             CardVizProperties cardVizProperties = null;
-            bool finded = false;
 
-            for(int i = 0; i < properties.Length && !finded; i++)
+            for(int i = 0; i < properties.Length; i++)
             {
                 if(properties[i].element == e)
                 {
                     cardVizProperties = properties[i];
-                    finded = true;
+                    break;
                 }
             }
 

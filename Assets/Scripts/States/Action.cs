@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Action : ScriptableObject
+namespace AkeenDev.GameState
 {
-    public abstract void Execute(float d);
+    public abstract class Action : ScriptableObject
+    {
+        public abstract void Execute(float d);
+    }
 }

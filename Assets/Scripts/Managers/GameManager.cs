@@ -12,5 +12,15 @@ namespace AkeenDev
         {
             currentState.Tick(Time.deltaTime);
         }
+
+        private void Start()
+        {
+            Settings.gameManager = this;
+        }
+
+        public void SetState(State state)
+        {
+            currentState = state;
+        }
     }
 }
