@@ -9,6 +9,7 @@ namespace AkeenDev.GameState
     {
         public State playerControlState;
         public SO.GameEvent onPlayerControlState;
+        public CardVariable currentCard;
         public override void Execute(float d)
         {
             bool mouseIsDown = Input.GetMouseButton(0);
@@ -21,7 +22,17 @@ namespace AkeenDev.GameState
                 foreach(RaycastResult r in results)
                 {
                     //Check x droppable area.
+                    GameElements.Area area = r.gameObject.GetComponentInParent<GameElements.Area>();
+                    
+                    if(area != null)
+                    {
+                        area.OnDrop();
+                        break;
+                    }
                 }
+
+                currentCard.value.gameObject.SetActive(true);
+                currentCard.value = null;
 
                 Settings.gameManager.SetState(playerControlState);
                 onPlayerControlState.Raise();

@@ -15,3 +15,4 @@ MonoBehaviour:
   playerControlState: {fileID: 11400000, guid: f078158b976aaa74393e61f897fef1be, type: 2}
   onPlayerControlState: {fileID: 11400000, guid: af7e510543986f547b867464aedb5107,
     type: 2}
+  currentCard: {fileID: 11400000, guid: c7e988ed5b59a174db21ce28c03c4c38, type: 2}

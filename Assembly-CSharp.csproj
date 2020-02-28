@@ -74,10 +74,13 @@
     <Compile Include="Assets\Scripts\Cards\ElementInt.cs" />
     <Compile Include="Assets\Scripts\Cards\ElementText.cs" />
     <Compile Include="Assets\Scripts\Cards\SpellCard.cs" />
+    <Compile Include="Assets\Scripts\Game Elements\Area.cs" />
+    <Compile Include="Assets\Scripts\Game Elements\AreaLogic.cs" />
     <Compile Include="Assets\Scripts\Game Elements\CardInstance.cs" />
     <Compile Include="Assets\Scripts\Game Elements\GE_Logic.cs" />
     <Compile Include="Assets\Scripts\Game Elements\HandCard.cs" />
     <Compile Include="Assets\Scripts\Game Elements\MyCardDown.cs" />
+    <Compile Include="Assets\Scripts\Game Elements\MyCardsDownAreaLogic.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IClickable.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />
