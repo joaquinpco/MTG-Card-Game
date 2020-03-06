@@ -9,16 +9,16 @@ namespace AkeenDev.GameElements
         public CardVariable card;
         public CardType creatureType;
         public SO.TransformVariable areaGrid;
+        public AkeenDev.GameElements.GE_Logic cardsDownLogic;
         public override void Execute()
         {
             if(card.value != null)
             {
                 if(card.value.viz.card.cardType == creatureType)
                 {
-                    card.value.transform.SetParent(areaGrid.value.transform);
-                    card.value.transform.localPosition = Vector3.zero;
-                    card.value.transform.localScale = Vector3.one;
+                    Settings.SetParentForCard(card.value.transform, areaGrid.value.transform);
                     card.value.gameObject.SetActive(true);
+                    card.value.currentLogic = cardsDownLogic;
                 }
             }
         }

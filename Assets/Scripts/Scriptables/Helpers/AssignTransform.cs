@@ -10,7 +10,7 @@ namespace SA
     {
         public TransformVariable transformVariable;
 
-		private void OnEnable()
+		private void Awake()
 		{
 			transformVariable.value = this.transform;
 			Destroy(this);

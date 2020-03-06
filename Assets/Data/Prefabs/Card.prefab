@@ -950,6 +950,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8447170626698144622}
+  - component: {fileID: 899330848}
+  - component: {fileID: 899330849}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -966,7 +968,7 @@ RectTransform:
   m_GameObject: {fileID: 6273296504562022290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1963195, y: 1.1963195, z: 1.1963195}
   m_Children:
   - {fileID: 5407261490259872704}
   - {fileID: 4152488876192758610}
@@ -978,6 +980,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &899330848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6273296504562022290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32bca5965d01a54e9e8a6d6676c3951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viz: {fileID: 0}
+  currentLogic: {fileID: 11400000, guid: 1f84f8bcffcc82e43b04788a750964a0, type: 2}
+--- !u!114 &899330849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6273296504562022290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8685b9f494acf7642b577f120fe57653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 11400000, guid: ef46a96346d079b4ab67dec80cd927c7, type: 2}
+  properties:
+  - text: {fileID: 5407261489986790695}
+    img: {fileID: 0}
+    element: {fileID: 11400000, guid: f3372a8e62f136e45b75a294767aac49, type: 2}
+  - text: {fileID: 6101175290796008647}
+    img: {fileID: 0}
+    element: {fileID: 11400000, guid: 7d5c37ba682a6284a9c37fe89fcf3a14, type: 2}
+  - text: {fileID: 599150802640706547}
+    img: {fileID: 0}
+    element: {fileID: 11400000, guid: 742870d5c5fce594f9b1b521eb9f1391, type: 2}
+  - text: {fileID: 5240569894650796156}
+    img: {fileID: 0}
+    element: {fileID: 11400000, guid: 7b431b93ee46f514ca11498d1d8c1c90, type: 2}
+  - text: {fileID: 0}
+    img: {fileID: 5407261490036746065}
+    element: {fileID: 11400000, guid: ba44d1b1992e75d4e90dfd32c891d7b6, type: 2}
+  - text: {fileID: 4860924916369999925}
+    img: {fileID: 0}
+    element: {fileID: 11400000, guid: 261b9ba1a408baf4aa68506882b660fc, type: 2}
+  statsHolder: {fileID: 8089293613867253337}
 --- !u!1 &6486676907363438580
 GameObject:
   m_ObjectHideFlags: 0

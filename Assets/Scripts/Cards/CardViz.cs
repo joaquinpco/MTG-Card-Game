@@ -58,10 +58,5 @@ namespace AkeenDev
             return cardVizProperties;
         }
 
-        // Use this for initialization
-        void Start()
-        {
-            LoadCard(card);
-        }
     }
 }

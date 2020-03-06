@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Game Elements\HandCard.cs" />
     <Compile Include="Assets\Scripts\Game Elements\MyCardDown.cs" />
     <Compile Include="Assets\Scripts\Game Elements\MyCardsDownAreaLogic.cs" />
+    <Compile Include="Assets\Scripts\Holder\PlayerHolder.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IClickable.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />
