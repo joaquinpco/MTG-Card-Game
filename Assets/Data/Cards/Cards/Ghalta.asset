@@ -29,7 +29,7 @@ MonoBehaviour:
     element: {fileID: 11400000, guid: 742870d5c5fce594f9b1b521eb9f1391, type: 2}
   - stringValue: 
     intValue: 0
-    sprite: {fileID: 21300000, guid: e6b7001cc79071f41b89ed349cb77ad6, type: 3}
+    sprite: {fileID: 21300000, guid: cf67dfed68f19d2468a182b2f460542e, type: 3}
     element: {fileID: 11400000, guid: ba44d1b1992e75d4e90dfd32c891d7b6, type: 2}
   - stringValue: 
     intValue: 1
