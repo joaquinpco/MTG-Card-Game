@@ -16,10 +16,6 @@ They choose these decks from a pool of some 20,000 cards created as the game evo
 - Unity 3D
 - Visual StudiO
 
-## Contributing
-
-- José Manuel Morales García (art design)
-
 ## Authors
 
 * **José Joaquín Pérez Calderón Ortiz** - *Initial work* - [joaquinpco](https://github.com/joaquinpco)
